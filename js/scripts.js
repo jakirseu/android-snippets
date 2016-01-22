@@ -1,6 +1,6 @@
  
         $(document).ready(function() {
-            $("#toc").append('<h2>Navigation:</h2>')
+            $("#toc").append('<p>Navigation:</p>')
             $("h1, h2, h3").each(function(i) {
                 var current = $(this);
                 current.attr("id", "title" + i);

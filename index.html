@@ -113,6 +113,81 @@
 		
 		</xmp>
         </p>
+	<h1>Admob form xml</h1>	
+	
+	<p> 
+	dependencies:
+	<xmp>
+	dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile 'com.google.android.gms:play-services:6.+'
+}
+
+</xmp>
+imports:
+
+<xmp>
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+</xmp>
+
+Java:
+
+<xmp>
+       AdView mAdView = (AdView) findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+</xmp>
+
+XML:
+
+<xmp>
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|center"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
+
+    </com.google.android.gms.ads.AdView>
+</xmp>
+	
+Permission:
+
+<xmp>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+</xmp>	
+
+ad meta data and  activity:
+
+<xmp>
+        <meta-data android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <activity android:name="com.google.android.gms.ads.AdActivity"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+            android:theme="@android:style/Theme.Translucent" />
+</xmp>
+	
+	</p>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
         
     </div><!-- content-->
 </div>
