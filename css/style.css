@@ -2,7 +2,7 @@
         body { font-family:Arial, Sans-Serif; font-size:13px;}
         #container { width:960px; overflow:hidden; margin:0px auto; position:relative;}
         #content { width:660px; float:right;}
-        #toc { width:200px; position:fixed; float:left;}
+        #toc { width:200px; position:fixed; float:left;    line-height: 25px;}
         
         #toc a { display:block; color:#0094FF;}
         
