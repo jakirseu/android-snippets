@@ -149,7 +149,7 @@ XML:
         android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="true"
         android:layout_gravity="bottom|center"
-        ads:adSize="BANNER"
+        ads:adSize="SMART_BANNER"
         ads:adUnitId="ca-app-pub-3940256099942544/6300978111">
 
     </com.google.android.gms.ads.AdView>
@@ -178,15 +178,52 @@ ad meta data and  activity:
 		
 		
 		
+	<h1>Placeholder</h1>
+
+<p>
+android:hint="Enter name" 
+</p>	
+		
+		<h1>Open New activity </h1>
+		
+		<p>
+		<xmp>
+		   Button button;
+		   .
+		   .
+        button=(Button)findViewById(R.id.button);
+        button.setOnClickListener(new View.OnClickListener() {
+
+            @Override
+            public void onClick(View v) {
+                // TODO Auto-generated method stub
+                Intent i = new Intent(getApplicationContext(), MyActivity.class);
+                startActivity(i);
+            }
+        });
+		</xmp>
+		</p>
 		
 		
-		
-		
-		
-		
-		
-		
-		
+	<h2>Java.exe finished with non-zero exit value</h2>	
+	<p>
+http://stackoverflow.com/questions/34285406/java-exe-finished-with-non-zero-exit-value-2-in-android-studio
+https://medium.com/@erikhellman/boosting-the-performance-for-gradle-in-your-android-projects-6d5f9e4580b6#.5se4189ea
+	</p>
+<h2>check isOnoline</h2>
+	
+<xmp>
+    private boolean isOnline() {
+        ConnectivityManager cm = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo netInfo = cm.getActiveNetworkInfo();
+
+        if (netInfo != null && netInfo.isConnectedOrConnecting()){
+            return true;
+        }else return false;
+    }
+</xmp>
+
+	
 		
         
     </div><!-- content-->
