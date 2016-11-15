@@ -176,13 +176,26 @@ ad meta data and  activity:
 
 
 
-<h1>Shot Toast</h1>
+<h1>Show Toast</h1>
 <p>
     <xmp>
      Toast.makeText(getApplicationContext(), "Text you want to show", Toast.LENGTH_LONG).show();
     </xmp>
 </p>		
 
+<h1>Set Text to Clipboard</h1>
+<p>
+    <xmp>
+ 
+
+    private void setClipboard(String text) {
+            android.content.ClipboardManager clipboard = (android.content.ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
+            android.content.ClipData clip = android.content.ClipData.newPlainText("Copied Text", text);
+            clipboard.setPrimaryClip(clip);
+
+    }
+    </xmp>
+</p>		
 
 
 
