@@ -1,10 +1,11 @@
   
         body { font-family:Arial, Sans-Serif; font-size:13px;}
-        #container { width:960px; overflow:hidden; margin:0px auto; position:relative;}
-        #content { width:660px; float:right;}
-        #toc { width:200px; position:fixed; float:left;    line-height: 25px;}
+        #container { width: 100#; overflow:hidden; margin:0px auto; position:relative;}
+        #content { width:74%; float:right;}
+        #toc {     width: 24%; position:fixed; float:left; margin:10px;    line-height: 25px;}
         
-        #toc a { display:block; color:#0094FF;}
+        #toc a { display:block; color:#0094FF;    text-decoration: none;    padding: 5px 0;
+    border-bottom: 1px solid #ccc;}
         
         #toc a[title=H1] { font-size:18px;}
         #toc a[title=H2] { font-size:14px;}
@@ -13,4 +14,7 @@
 		xmp {
 			background:#E2E2E2;
 		}
- 
+ #toc p{
+ font-size:20px;
+ font-weight:bold;
+ }

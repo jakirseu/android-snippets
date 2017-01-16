@@ -264,12 +264,66 @@ https://medium.com/@erikhellman/boosting-the-performance-for-gradle-in-your-andr
 
 
 
+<h1>Convert Unicode to Text</h1>
+<p>
+    <xmp>
+import org.apache.commons.lang.StringEscapeUtils;
+
+String unicode = "\u0048\u0065\u006C\u006C\u006F";
+String Title = StringEscapeUtils.unescapeJava(unicode);
+    </xmp>
+</p>		
+
+
+
+<h1>Simple Snackbar</h1>
+<p>
+    <xmp>
+Snackbar snackbar = Snackbar
+        .make(coordinatorLayout, "Hello World!", Snackbar.LENGTH_LONG);
+ 
+snackbar.show();
+    </xmp>
+</p>		
+
+
+<h1>Snackbar with Action Callback</h1>
+<p>
+    <xmp>
+Snackbar snackbar = Snackbar
+        .make(coordinatorLayout, "Hello World!", Snackbar.LENGTH_LONG)
+        .setAction("Try again", new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Snackbar snackbar1 = Snackbar.make(coordinatorLayout, "Message is restored!", Snackbar.LENGTH_SHORT);
+                snackbar1.show();
+            }
+        });
+ 
+snackbar.show();
+    </xmp>
+</p>		
+
+
+<h1>Reload activity in Android</h1>
+<p>
+    <xmp>
+finish();
+startActivity(getIntent());
+    </xmp>
+</p>	
 
 
 
 
-
-
+<h1>Grid layout with recyclerview</h1>
+<p>
+    <xmp>
+RecyclerView.LayoutManager layoutManager;
+layoutManager = new GridLayoutManager(getActivity(), 2);
+recyclerView.setLayoutManager(layoutManager);
+    </xmp>
+</p>	
 
 
 
